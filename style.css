@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.player {
+  position: relative;
+  overflow: hidden;
+  max-width: 750px;
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  font-size: 0;
+}
+.player:hover .player-controls {
+  transform: translateY(0);
+}
+.player-video {
+  width: 100%;
+}
+
+.player-controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(100%) translateY(-5px);
+  background: rgba(0, 0, 0, 0.1);
+}
+.progress {
+  background: rgb(89, 172, 187);
+  height: 20px;
+}
+.progress-field {
+  background-color: coral;
+  height: 20px;
+  width: 10%;
+}
